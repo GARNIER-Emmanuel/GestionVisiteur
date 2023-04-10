@@ -1,0 +1,27 @@
+
+--
+-- Base de données :  `garnierboidun_visiteurs` ( Sur alwaysdata )
+-- 
+
+
+CREATE DATABASE IF NOT EXISTS garnierboidun_visiteurs;
+USE garnierboidun_visiteurs;
+
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `visiteur`
+--
+
+CREATE TABLE IF NOT EXISTS `visiteur` (
+  `id` int(11) NOT NULL PRIMARY KEY,
+  `nom` varchar(30) DEFAULT NULL,
+  `prenom` varchar(30) DEFAULT NULL,
+  `login` varchar(30) DEFAULT NULL,
+  `mdp` varchar(30) DEFAULT NULL,
+  `adresse` varchar(30) DEFAULT NULL,
+  `cp` varchar(30) DEFAULT NULL,
+  `ville` varchar(30) DEFAULT NULL,
+  `dateEmbauche` varchar(30) DEFAULT NULL
+);
